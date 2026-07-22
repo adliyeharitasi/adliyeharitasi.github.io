@@ -40,5 +40,5 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           wranglerVersion: "4"
-          preCommands: pages project list
+          preCommands: wrangler pages project list
           command: pages deploy dist --project-name=adliye-haritasi --branch=main
