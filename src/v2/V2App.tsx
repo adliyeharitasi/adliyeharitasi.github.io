@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
-import { Building2, CalendarClock, ExternalLink, Landmark, MapPin, Moon, Scale, Search, ShieldCheck, Sun } from 'lucide-react'
-import { loadJudicialDistricts, loadLocations, loadRegionalCourts, loadSources } from '../data/repository'
-import type { JudicialDistrictRecord, LocationRecord, RegionalCourtRecord, SourceRecord } from '../types'
+import { Building2, CalendarClock, ExternalLink, Landmark, MapPin, Moon, PhoneCall, Scale, Search, ShieldCheck, Sun } from 'lucide-react'
+import { loadCourthouseContacts, loadJudicialDistricts, loadLocations, loadRegionalCourts, loadSources } from '../data/repository'
+import type { CourthouseContactRecord, JudicialDistrictRecord, LocationRecord, RegionalCourtRecord, SourceRecord } from '../types'
 import { SimpleJudicialMap } from './SimpleJudicialMap'
 import './v2.css'
 
@@ -15,6 +15,7 @@ export function V2App() {
   const [items, setItems] = useState<DirectoryItem[]>([])
   const [sources, setSources] = useState<SourceRecord[]>([])
   const [regionalCourts, setRegionalCourts] = useState<RegionalCourtRecord[]>([])
+  const [courthouseContacts, setCourthouseContacts] = useState<CourthouseContactRecord[]>([])
   const [selected, setSelected] = useState<DirectoryItem>()
   const [query, setQuery] = useState('')
   const [province, setProvince] = useState('')
@@ -32,8 +33,8 @@ export function V2App() {
   }, [darkMode])
 
   useEffect(() => {
-    Promise.all([loadLocations(), loadJudicialDistricts(), loadSources(), loadRegionalCourts()])
-      .then(([locations, districts, sourceData, regionalCourtData]) => {
+    Promise.all([loadLocations(), loadJudicialDistricts(), loadSources(), loadRegionalCourts(), loadCourthouseContacts()])
+      .then(([locations, districts, sourceData, regionalCourtData, contactData]) => {
         const locationsById = new Map(locations.map((location) => [location.id, location]))
         const joined = districts
           .map((district) => ({ ...district, location: locationsById.get(district.locationId)! }))
@@ -42,6 +43,7 @@ export function V2App() {
         setItems(joined)
         setSources(sourceData)
         setRegionalCourts(regionalCourtData)
+        setCourthouseContacts(contactData)
       })
       .catch((reason) => setLoadingError(reason instanceof Error ? reason.message : 'Veriler yüklenemedi.'))
   }, [])
@@ -100,6 +102,9 @@ export function V2App() {
   const regionalCourtSources = selectedRegionalCourt?.sourceRefs
     .map((id) => sources.find((source) => source.id === id))
     .filter((source): source is SourceRecord => Boolean(source)) ?? []
+  const selectedCourthouseContact = selected
+    ? courthouseContacts.find((contact) => contact.courthouseSeat === selected.courthouseSeat)
+    : undefined
 
   return (
     <div className={`v2-app ${darkMode ? 'dark' : ''}`}>
@@ -188,6 +193,11 @@ export function V2App() {
                   )}
                   <small className="v2-scope-note">İhtisas mahkemelerinin yargı çevresi ayrıca düzenlenmiş olabilir.</small>
                   <div className="v2-sources">
+                    {selectedCourthouseContact && (
+                      <a className="v2-contact-link" href={selectedCourthouseContact.contactUrl} target="_blank" rel="noreferrer">
+                        <PhoneCall size={12} /> {selectedCourthouseContact.linkLabel} <ExternalLink size={12} />
+                      </a>
+                    )}
                     {selectedSources.map((source) => <a key={source.id} href={source.url} target="_blank" rel="noreferrer">İlk derece kaynağı <ExternalLink size={12} /></a>)}
                     {selectedRegionalCourt?.officialUrl && <a href={selectedRegionalCourt.officialUrl} target="_blank" rel="noreferrer">BAM resmî sitesi <ExternalLink size={12} /></a>}
                     {regionalCourtSources.map((source) => <a key={source.id} href={source.url} target="_blank" rel="noreferrer">BAM dayanağı <ExternalLink size={12} /></a>)}

@@ -27,6 +27,14 @@ export interface RegionalCourtRecord {
   verifiedAt: string
 }
 
+export interface CourthouseContactRecord {
+  courthouseSeat: string
+  officialName: string
+  contactUrl: string
+  linkLabel: string
+  verifiedAt: string
+}
+
 export type JudicialActivityStatus = 'faal' | 'birlestirildi' | 'teskilat-kurulmadi' | 'faal-degil'
 export type JudicialOrganizationType = 'acm' | 'mulhakat' | 'none'
 

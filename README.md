@@ -39,6 +39,7 @@ public/data/
   provinces.geojson         il sınırları
   locations.json            arama ve koordinat indeksi
   judicial-districts.json   ilçe → adliye eşleşmeleri
+  courthouse-contacts.json doğrulanmış resmî iletişim/telefon rehberi bağlantıları
   regional-courts.json      81 il → 17 faal BAM + 1 planlanan BAM
   sources.json              kaynak kayıtları
 scripts/validate-data.mjs   veri bütünlüğü kontrolü

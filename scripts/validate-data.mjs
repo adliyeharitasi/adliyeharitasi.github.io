@@ -8,6 +8,7 @@ const locations = readJson('public/data/locations.json')
 const judicialDistricts = readJson('public/data/judicial-districts.json')
 const sources = readJson('public/data/sources.json')
 const regionalCourts = readJson('public/data/regional-courts.json')
+const courthouseContacts = readJson('public/data/courthouse-contacts.json')
 
 const errors = []
 const ids = new Set()
@@ -20,6 +21,20 @@ for (const location of locations) {
   ids.add(location.id)
   if (!location.provinceId || !location.districtName || !Array.isArray(location.center)) {
     errors.push(`Eksik konum alanı: ${location.id}`)
+  }
+}
+
+const courthouseSeats = new Set(judicialDistricts.map((record) => record.courthouseSeat))
+const contactSeats = new Set()
+for (const contact of courthouseContacts) {
+  if (contactSeats.has(contact.courthouseSeat)) errors.push(`Mükerrer adliye iletişim kaydı: ${contact.courthouseSeat}`)
+  contactSeats.add(contact.courthouseSeat)
+  if (!courthouseSeats.has(contact.courthouseSeat)) errors.push(`Yargı çevresinde bulunmayan adliye iletişim kaydı: ${contact.courthouseSeat}`)
+  if (!contact.contactUrl?.startsWith('https://') || !contact.contactUrl.includes('.adalet.gov.tr/')) {
+    errors.push(`Resmî olmayan adliye iletişim bağlantısı: ${contact.courthouseSeat}`)
+  }
+  if (!contact.officialName || !contact.linkLabel || !contact.verifiedAt) {
+    errors.push(`Eksik adliye iletişim alanı: ${contact.courthouseSeat}`)
   }
 }
 
@@ -190,4 +205,4 @@ if (errors.length) {
   process.exit(1)
 }
 
-console.log(`Veri doğrulandı: 81 il, ${locations.length} coğrafi alan, ${judicialDistricts.length} yargı çevresi, ${activeRegionalCourts.length} faal + ${plannedRegionalCourts.length} planlanan BAM, ${sources.length} kaynak.`)
+console.log(`Veri doğrulandı: 81 il, ${locations.length} coğrafi alan, ${judicialDistricts.length} yargı çevresi, ${activeRegionalCourts.length} faal + ${plannedRegionalCourts.length} planlanan BAM, ${courthouseContacts.length} adliye iletişim bağlantısı, ${sources.length} kaynak.`)
