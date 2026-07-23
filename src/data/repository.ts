@@ -54,22 +54,24 @@ async function fetchJson<T>(url: string, schema: z.ZodType<T>): Promise<T> {
   return schema.parse(await response.json())
 }
 
-export const loadLocations = () => fetchJson<LocationRecord[]>('/data/locations.json', z.array(locationSchema))
-export const loadSources = () => fetchJson<SourceRecord[]>('/data/sources.json', z.array(sourceSchema))
-export const loadRegionalCourts = () => fetchJson<RegionalCourtRecord[]>('/data/regional-courts.json', z.array(regionalCourtSchema))
+const assetUrl = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`
+
+export const loadLocations = () => fetchJson<LocationRecord[]>(assetUrl('data/locations.json'), z.array(locationSchema))
+export const loadSources = () => fetchJson<SourceRecord[]>(assetUrl('data/sources.json'), z.array(sourceSchema))
+export const loadRegionalCourts = () => fetchJson<RegionalCourtRecord[]>(assetUrl('data/regional-courts.json'), z.array(regionalCourtSchema))
 export const loadJudicialDistricts = () => fetchJson<JudicialDistrictRecord[]>(
-  '/data/judicial-districts.json',
+  assetUrl('data/judicial-districts.json'),
   z.array(judicialDistrictSchema) as z.ZodType<JudicialDistrictRecord[]>,
 )
 
 export const loadProvincesGeoJson = async () => {
-  const response = await fetch('/data/provinces.geojson')
+  const response = await fetch(assetUrl('data/provinces.geojson'))
   if (!response.ok) throw new Error('İl sınırları yüklenemedi.')
   return response.json()
 }
 
 export const loadDistrictsGeoJson = async (provinceId: string) => {
-  const response = await fetch(`/data/districts/${provinceId}.geojson`)
+  const response = await fetch(assetUrl(`data/districts/${provinceId}.geojson`))
   if (!response.ok) throw new Error('İlçe sınırları yüklenemedi.')
   return response.json()
 }

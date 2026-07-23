@@ -1,0 +1,54 @@
+name: GitHub Pages'e Yayinla
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages-production
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Kaynak kodunu al
+        uses: actions/checkout@v4
+
+      - name: Node.js 24 kur
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Bagimliliklari kur
+        run: npm ci
+
+      - name: Veriyi dogrula
+        run: npm run data:validate
+
+      - name: GitHub Pages paketini olustur
+        run: npm run build
+        env:
+          DEPLOY_BASE_PATH: /adliye-haritasi/
+
+      - name: GitHub Pages'i yapilandir
+        uses: actions/configure-pages@v5
+
+      - name: Paketi yukle
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+
+      - name: GitHub Pages'e yayinla
+        id: deployment
+        uses: actions/deploy-pages@v4

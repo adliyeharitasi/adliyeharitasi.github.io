@@ -5,6 +5,8 @@ import type { JudicialDistrictRecord, LocationRecord, RegionalCourtRecord, Sourc
 import { SimpleJudicialMap } from './SimpleJudicialMap'
 import './v2.css'
 
+const baseUrl = import.meta.env.BASE_URL
+
 interface DirectoryItem extends JudicialDistrictRecord {
   location: LocationRecord
 }
@@ -71,7 +73,7 @@ export function V2App() {
       <div className="v2-loading-orbit orbit-two" aria-hidden="true" />
       <section className="v2-loading-card">
         <div className="v2-loading-brand">
-          <span><img src="/icon.svg" alt="" /></span>
+          <span><img src={`${baseUrl}icon.svg`} alt="" /></span>
           <div><b>Adliye Haritası</b><small>Türkiye adliye rehberi</small></div>
         </div>
         <div className="v2-loading-emblem" aria-hidden="true">
@@ -102,8 +104,8 @@ export function V2App() {
   return (
     <div className={`v2-app ${darkMode ? 'dark' : ''}`}>
       <header className="v2-header">
-        <a className="v2-brand" href="/" aria-label="Adliye Haritası ana sayfa">
-          <span><img src="/icon.svg" alt="" /></span>
+        <a className="v2-brand" href={baseUrl} aria-label="Adliye Haritası ana sayfa">
+          <span><img src={`${baseUrl}icon.svg`} alt="" /></span>
           <div><b>Adliye Haritası</b><small>İlçe hangi adliyeye bağlı?</small></div>
         </a>
         <div className="v2-header-note"><ShieldCheck size={15} /> Resmî kaynaklarla kontrol edildi</div>
