@@ -4,6 +4,8 @@ Türkiye'de bir ilçenin hangi genel ilk derece adliyesinin yargı çevresinde o
 ve bağlı Bölge Adliye Mahkemesini harita veya listeden gösteren sade, Türkçe ve
 çevrimdışı çalışabilen PWA.
 
+Canlı uygulama: https://adliyeharitasi.github.io/
+
 ## Kurulum
 
 Node.js 24 LTS ile:

@@ -39,7 +39,7 @@ jobs:
       - name: GitHub Pages paketini olustur
         run: npm run build
         env:
-          DEPLOY_BASE_PATH: /adliye-haritasi/
+          DEPLOY_BASE_PATH: /
 
       - name: GitHub Pages'i yapilandir
         uses: actions/configure-pages@v5
