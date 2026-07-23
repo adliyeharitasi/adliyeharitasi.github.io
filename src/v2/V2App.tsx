@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Building2, CalendarClock, ExternalLink, Landmark, MapPin, Moon, PhoneCall, Scale, Search, ShieldCheck, Sun } from 'lucide-react'
 import { loadCourthouseContacts, loadJudicialDistricts, loadLocations, loadRegionalCourts, loadSources } from '../data/repository'
-import type { CourthouseContactRecord, JudicialDistrictRecord, LocationRecord, RegionalCourtRecord, SourceRecord } from '../types'
+import type { CourthouseContactsData, JudicialDistrictRecord, LocationRecord, RegionalCourtRecord, SourceRecord } from '../types'
 import { SimpleJudicialMap } from './SimpleJudicialMap'
 import './v2.css'
 
@@ -15,7 +15,7 @@ export function V2App() {
   const [items, setItems] = useState<DirectoryItem[]>([])
   const [sources, setSources] = useState<SourceRecord[]>([])
   const [regionalCourts, setRegionalCourts] = useState<RegionalCourtRecord[]>([])
-  const [courthouseContacts, setCourthouseContacts] = useState<CourthouseContactRecord[]>([])
+  const [courthouseContacts, setCourthouseContacts] = useState<CourthouseContactsData>()
   const [selected, setSelected] = useState<DirectoryItem>()
   const [query, setQuery] = useState('')
   const [province, setProvince] = useState('')
@@ -103,7 +103,10 @@ export function V2App() {
     .map((id) => sources.find((source) => source.id === id))
     .filter((source): source is SourceRecord => Boolean(source)) ?? []
   const selectedCourthouseContact = selected
-    ? courthouseContacts.find((contact) => contact.courthouseSeat === selected.courthouseSeat)
+    ? courthouseContacts?.records.find((contact) => contact.courthouseSeat === selected.courthouseSeat)
+      ?? (courthouseContacts
+        ? { courthouseSeat: selected.courthouseSeat, ...courthouseContacts.fallback }
+        : undefined)
     : undefined
 
   return (
@@ -193,17 +196,30 @@ export function V2App() {
                   )}
                   <small className="v2-scope-note">İhtisas mahkemelerinin yargı çevresi ayrıca düzenlenmiş olabilir.</small>
                   <div className="v2-sources">
-                    {selectedCourthouseContact && (
-                      <a className="v2-contact-link" href={selectedCourthouseContact.contactUrl} target="_blank" rel="noreferrer">
-                        <PhoneCall size={12} /> {selectedCourthouseContact.linkLabel} <ExternalLink size={12} />
-                      </a>
-                    )}
                     {selectedSources.map((source) => <a key={source.id} href={source.url} target="_blank" rel="noreferrer">İlk derece kaynağı <ExternalLink size={12} /></a>)}
                     {selectedRegionalCourt?.officialUrl && <a href={selectedRegionalCourt.officialUrl} target="_blank" rel="noreferrer">BAM resmî sitesi <ExternalLink size={12} /></a>}
                     {regionalCourtSources.map((source) => <a key={source.id} href={source.url} target="_blank" rel="noreferrer">BAM dayanağı <ExternalLink size={12} /></a>)}
                     <small>Kontrol: {selected.verifiedAt} · BAM: {selectedRegionalCourt?.verifiedAt}</small>
                   </div>
                 </div>
+                {selectedCourthouseContact && (
+                  <div className="v2-result-contact">
+                    <a
+                      className="v2-contact-link"
+                      href={selectedCourthouseContact.contactUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      title={selectedCourthouseContact.scope === 'directory'
+                        ? 'Bu adliye için ayrı bir resmî site bulunmadığından Adalet Bakanlığı telefon rehberi açılır.'
+                        : `${selectedCourthouseContact.officialName} iletişim sayfasını aç`}
+                    >
+                      <PhoneCall size={15} />
+                      <span>{selectedCourthouseContact.linkLabel}</span>
+                      <ExternalLink size={13} />
+                    </a>
+                    {selectedCourthouseContact.scope === 'directory' && <small>Bakanlık genel telefon rehberi</small>}
+                  </div>
+                )}
               </>
             ) : (
               <p className="v2-prompt"><MapPin size={18} /> Bir ilçe seçtiğinizde bağlı olduğu adliye burada gösterilir.</p>

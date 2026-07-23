@@ -1,9 +1,1368 @@
-[
-  {
-    "courthouseSeat": "İstanbul Anadolu",
-    "officialName": "İstanbul Anadolu Adalet Sarayı",
-    "contactUrl": "https://istanbulanadolu.adalet.gov.tr/anadolu-adliyesi-telefon-rehberi",
-    "linkLabel": "İletişim ve telefon rehberi",
+{
+  "directorySource": {
+    "title": "T.C. Adalet Bakanlığı Adliyeler Rehberi",
+    "url": "https://www.adalet.gov.tr/Birimler/ACM",
     "verifiedAt": "2026-07-23"
-  }
-]
+  },
+  "fallback": {
+    "officialName": "T.C. Adalet Bakanlığı Telefon Rehberi",
+    "contactUrl": "https://edb.adalet.gov.tr/Rehber",
+    "linkLabel": "Adalet telefon rehberi",
+    "scope": "directory",
+    "verifiedAt": "2026-07-23"
+  },
+  "records": [
+    {
+      "courthouseSeat": "Adana",
+      "officialName": "ADANA ADLİYESİ",
+      "contactUrl": "https://adana.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Adıyaman",
+      "officialName": "ADIYAMAN ADLİYESİ",
+      "contactUrl": "https://adiyaman.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Afyonkarahisar",
+      "officialName": "AFYONKARAHİSAR ADLİYESİ",
+      "contactUrl": "https://afyonkarahisar.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Ağrı",
+      "officialName": "AĞRI ADLİYESİ",
+      "contactUrl": "https://agri.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Akhisar",
+      "officialName": "AKHİSAR ADLİYESİ",
+      "contactUrl": "https://akhisar.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Aksaray",
+      "officialName": "AKSARAY ADLİYESİ",
+      "contactUrl": "https://aksaray.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Akşehir",
+      "officialName": "AKŞEHİR ADLİYESİ",
+      "contactUrl": "https://aksehir.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Alanya",
+      "officialName": "ALANYA ADLİYESİ",
+      "contactUrl": "https://alanya.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Alaşehir",
+      "officialName": "ALAŞEHİR ADLİYESİ",
+      "contactUrl": "https://alasehir.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Amasya",
+      "officialName": "AMASYA ADLİYESİ",
+      "contactUrl": "https://amasya.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Anamur",
+      "officialName": "ANAMUR ADLİYESİ",
+      "contactUrl": "https://anamur.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Ankara",
+      "officialName": "ANKARA ADLİYESİ",
+      "contactUrl": "https://ankara.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Ankara Batı",
+      "officialName": "ANKARA BATI ADLİYESİ",
+      "contactUrl": "https://ankarabati.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Antalya",
+      "officialName": "ANTALYA ADLİYESİ",
+      "contactUrl": "https://antalya.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Ardahan",
+      "officialName": "ARDAHAN ADLİYESİ",
+      "contactUrl": "https://ardahan.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Artvin",
+      "officialName": "ARTVİN ADLİYESİ",
+      "contactUrl": "https://artvin.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Aydın",
+      "officialName": "AYDIN ADLİYESİ",
+      "contactUrl": "https://aydin.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Bafra",
+      "officialName": "BAFRA ADLİYESİ",
+      "contactUrl": "https://bafra.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Bakırköy",
+      "officialName": "BAKIRKÖY ADLİYESİ",
+      "contactUrl": "https://bakirkoy.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Balıkesir",
+      "officialName": "BALIKESİR ADLİYESİ",
+      "contactUrl": "https://balikesir.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Bandırma",
+      "officialName": "BANDIRMA ADLİYESİ",
+      "contactUrl": "https://bandirma.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Bartın",
+      "officialName": "BARTIN ADLİYESİ",
+      "contactUrl": "https://bartin.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Batman",
+      "officialName": "BATMAN ADLİYESİ",
+      "contactUrl": "https://batman.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Bayburt",
+      "officialName": "BAYBURT ADLİYESİ",
+      "contactUrl": "https://bayburt.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Bergama",
+      "officialName": "BERGAMA ADLİYESİ",
+      "contactUrl": "https://bergama.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Beyşehir",
+      "officialName": "BEYŞEHİR ADLİYESİ",
+      "contactUrl": "https://beysehir.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Biga",
+      "officialName": "BİGA ADLİYESİ",
+      "contactUrl": "https://biga.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Bilecik",
+      "officialName": "BİLECİK ADLİYESİ",
+      "contactUrl": "https://bilecik.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Bingöl",
+      "officialName": "BİNGÖL ADLİYESİ",
+      "contactUrl": "https://bingol.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Birecik",
+      "officialName": "BİRECİK ADLİYESİ",
+      "contactUrl": "https://birecik.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Bismil",
+      "officialName": "BİSMİL ADLİYESİ",
+      "contactUrl": "https://bismil.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Bitlis",
+      "officialName": "BİTLİS ADLİYESİ",
+      "contactUrl": "https://bitlis.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Bodrum",
+      "officialName": "BODRUM ADLİYESİ",
+      "contactUrl": "https://bodrum.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Boğazlıyan",
+      "officialName": "BOĞAZLIYAN ADLİYESİ",
+      "contactUrl": "https://bogazliyan.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Bolu",
+      "officialName": "BOLU ADLİYESİ",
+      "contactUrl": "https://bolu.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Bolvadin",
+      "officialName": "BOLVADİN ADLİYESİ",
+      "contactUrl": "https://bolvadin.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Boyabat",
+      "officialName": "BOYABAT ADLİYESİ",
+      "contactUrl": "https://boyabat.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Burdur",
+      "officialName": "BURDUR ADLİYESİ",
+      "contactUrl": "https://burdur.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Burhaniye",
+      "officialName": "BURHANİYE ADLİYESİ",
+      "contactUrl": "https://burhaniye.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Bursa",
+      "officialName": "BURSA ADLİYESİ",
+      "contactUrl": "https://bursa.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Ceyhan",
+      "officialName": "CEYHAN ADLİYESİ",
+      "contactUrl": "https://ceyhan.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Cizre",
+      "officialName": "CİZRE ADLİYESİ",
+      "contactUrl": "https://cizre.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Çanakkale",
+      "officialName": "ÇANAKKALE ADLİYESİ",
+      "contactUrl": "https://canakkale.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Çankırı",
+      "officialName": "ÇANKIRI ADLİYESİ",
+      "contactUrl": "https://cankiri.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Çarşamba",
+      "officialName": "ÇARŞAMBA ADLİYESİ",
+      "contactUrl": "https://carsamba.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Çerkezköy",
+      "officialName": "ÇERKEZKÖY ADLİYESİ",
+      "contactUrl": "https://cerkezkoy.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Çeşme",
+      "officialName": "ÇEŞME ADLİYESİ",
+      "contactUrl": "https://cesme.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Çorlu",
+      "officialName": "ÇORLU ADLİYESİ",
+      "contactUrl": "https://corlu.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Çorum",
+      "officialName": "ÇORUM ADLİYESİ",
+      "contactUrl": "https://corum.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Denizli",
+      "officialName": "DENİZLİ ADLİYESİ",
+      "contactUrl": "https://denizli.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Develi",
+      "officialName": "DEVELİ ADLİYESİ",
+      "contactUrl": "https://develi.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Dinar",
+      "officialName": "DİNAR ADLİYESİ",
+      "contactUrl": "https://dinar.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Diyarbakır",
+      "officialName": "DİYARBAKIR ADLİYESİ",
+      "contactUrl": "https://diyarbakir.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Doğubayazıt",
+      "officialName": "DOĞUBAYAZIT ADLİYESİ",
+      "contactUrl": "https://dogubayazit.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Dörtyol",
+      "officialName": "DÖRTYOL ADLİYESİ",
+      "contactUrl": "https://dortyol.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Düzce",
+      "officialName": "DÜZCE ADLİYESİ",
+      "contactUrl": "https://duzce.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Edirne",
+      "officialName": "EDİRNE ADLİYESİ",
+      "contactUrl": "https://edirne.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Elazığ",
+      "officialName": "ELAZIĞ ADLİYESİ",
+      "contactUrl": "https://elazig.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Elbistan",
+      "officialName": "ELBİSTAN ADLİYESİ",
+      "contactUrl": "https://elbistan.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Elmalı",
+      "officialName": "ELMALI ADLİYESİ",
+      "contactUrl": "https://elmali.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Erbaa",
+      "officialName": "ERBAA ADLİYESİ",
+      "contactUrl": "https://erbaa.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Erciş",
+      "officialName": "ERCİŞ ADLİYESİ",
+      "contactUrl": "https://ercis.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Ereğli",
+      "officialName": "EREĞLİ ADLİYESİ",
+      "contactUrl": "https://eregli.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Ergani",
+      "officialName": "ERGANİ ADLİYESİ",
+      "contactUrl": "https://ergani.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Ermenek",
+      "officialName": "ERMENEK ADLİYESİ",
+      "contactUrl": "https://ermenek.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Erzincan",
+      "officialName": "ERZİNCAN ADLİYESİ",
+      "contactUrl": "https://erzincan.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Erzurum",
+      "officialName": "ERZURUM ADLİYESİ",
+      "contactUrl": "https://erzurum.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Eskişehir",
+      "officialName": "ESKİŞEHİR ADLİYESİ",
+      "contactUrl": "https://eskisehir.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Fatsa",
+      "officialName": "FATSA ADLİYESİ",
+      "contactUrl": "https://fatsa.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Fethiye",
+      "officialName": "FETHİYE ADLİYESİ",
+      "contactUrl": "https://fethiye.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Gaziantep",
+      "officialName": "GAZİANTEP ADLİYESİ",
+      "contactUrl": "https://gaziantep.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Gaziosmanpaşa",
+      "officialName": "GAZİOSMANPAŞA ADLİYESİ",
+      "contactUrl": "https://gaziosmanpasa.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Gebze",
+      "officialName": "GEBZE ADLİYESİ",
+      "contactUrl": "https://gebze.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Gemlik",
+      "officialName": "GEMLİK ADLİYESİ",
+      "contactUrl": "https://gemlik.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Giresun",
+      "officialName": "GİRESUN ADLİYESİ",
+      "contactUrl": "https://giresun.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Gümüşhane",
+      "officialName": "GÜMÜŞHANE ADLİYESİ",
+      "contactUrl": "https://gumushane.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Hakkari",
+      "officialName": "HAKKARİ ADLİYESİ",
+      "contactUrl": "https://hakkari.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Hatay",
+      "officialName": "HATAY ADLİYESİ",
+      "contactUrl": "https://hatay.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Hınıs",
+      "officialName": "HINIS ADLİYESİ",
+      "contactUrl": "https://hinis.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Iğdır",
+      "officialName": "IĞDIR ADLİYESİ",
+      "contactUrl": "https://igdir.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Isparta",
+      "officialName": "ISPARTA ADLİYESİ",
+      "contactUrl": "https://isparta.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "İnebolu",
+      "officialName": "İNEBOLU ADLİYESİ",
+      "contactUrl": "https://inebolu.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "İnegöl",
+      "officialName": "İNEGÖL ADLİYESİ",
+      "contactUrl": "https://inegol.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "İskenderun",
+      "officialName": "İSKENDERUN ADLİYESİ",
+      "contactUrl": "https://iskenderun.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "İslahiye",
+      "officialName": "İSLAHİYE ADLİYESİ",
+      "contactUrl": "https://islahiye.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "İstanbul",
+      "officialName": "İSTANBUL ADLİYESİ",
+      "contactUrl": "https://istanbul.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "İstanbul Anadolu",
+      "officialName": "İstanbul Anadolu Adalet Sarayı",
+      "contactUrl": "https://istanbulanadolu.adalet.gov.tr/anadolu-adliyesi-telefon-rehberi",
+      "linkLabel": "İletişim ve telefon rehberi",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "İzmir",
+      "officialName": "İZMİR ADLİYESİ",
+      "contactUrl": "https://izmir.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Kadirli",
+      "officialName": "KADİRLİ ADLİYESİ",
+      "contactUrl": "https://kadirli.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Kahramanmaraş",
+      "officialName": "KAHRAMANMARAŞ ADLİYESİ",
+      "contactUrl": "https://kahramanmaras.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Kahta",
+      "officialName": "KAHTA ADLİYESİ",
+      "contactUrl": "https://kahta.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Karabük",
+      "officialName": "KARABÜK ADLİYESİ",
+      "contactUrl": "https://karabuk.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Karaman",
+      "officialName": "KARAMAN ADLİYESİ",
+      "contactUrl": "https://karaman.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Kars",
+      "officialName": "KARS ADLİYESİ",
+      "contactUrl": "https://kars.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Karşıyaka",
+      "officialName": "KARŞIYAKA ADLİYESİ",
+      "contactUrl": "https://karsiyaka.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Kastamonu",
+      "officialName": "KASTAMONU ADLİYESİ",
+      "contactUrl": "https://kastamonu.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Kayseri",
+      "officialName": "KAYSERİ ADLİYESİ",
+      "contactUrl": "https://kayseri.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Keşan",
+      "officialName": "KEŞAN ADLİYESİ",
+      "contactUrl": "https://kesan.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Kırıkhan",
+      "officialName": "KIRIKHAN ADLİYESİ",
+      "contactUrl": "https://kirikhan.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Kırıkkale",
+      "officialName": "KIRIKKALE ADLİYESİ",
+      "contactUrl": "https://kirikkale.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Kırklareli",
+      "officialName": "KIRKLARELİ ADLİYESİ",
+      "contactUrl": "https://kirklareli.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Kırşehir",
+      "officialName": "KIRŞEHİR ADLİYESİ",
+      "contactUrl": "https://kirsehir.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Kilis",
+      "officialName": "KİLİS ADLİYESİ",
+      "contactUrl": "https://kilis.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Kocaeli",
+      "officialName": "KOCAELİ ADLİYESİ",
+      "contactUrl": "https://kocaeli.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Konya",
+      "officialName": "KONYA ADLİYESİ",
+      "contactUrl": "https://konya.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Kozan",
+      "officialName": "KOZAN ADLİYESİ",
+      "contactUrl": "https://kozan.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Küçükçekmece",
+      "officialName": "KÜÇÜKÇEKMECE ADLİYESİ",
+      "contactUrl": "https://kucukcekmece.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Kütahya",
+      "officialName": "KÜTAHYA ADLİYESİ",
+      "contactUrl": "https://kutahya.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Lüleburgaz",
+      "officialName": "LÜLEBURGAZ ADLİYESİ",
+      "contactUrl": "https://luleburgaz.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Malatya",
+      "officialName": "MALATYA ADLİYESİ",
+      "contactUrl": "https://malatya.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Manavgat",
+      "officialName": "MANAVGAT ADLİYESİ",
+      "contactUrl": "https://manavgat.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Manisa",
+      "officialName": "MANİSA ADLİYESİ",
+      "contactUrl": "https://manisa.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Mardin",
+      "officialName": "MARDİN ADLİYESİ",
+      "contactUrl": "https://mardin.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Menemen",
+      "officialName": "MENEMEN ADLİYESİ",
+      "contactUrl": "https://menemen.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Mersin",
+      "officialName": "MERSİN ADLİYESİ",
+      "contactUrl": "https://mersin.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Merzifon",
+      "officialName": "MERZİFON ADLİYESİ",
+      "contactUrl": "https://merzifon.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Midyat",
+      "officialName": "MİDYAT ADLİYESİ",
+      "contactUrl": "https://midyat.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Milas",
+      "officialName": "MİLAS ADLİYESİ",
+      "contactUrl": "https://milas.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Muğla",
+      "officialName": "MUĞLA ADLİYESİ",
+      "contactUrl": "https://mugla.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Mustafakemalpaşa",
+      "officialName": "MUSTAFAKEMALPAŞA ADLİYESİ",
+      "contactUrl": "https://mustafakemalpasa.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Muş",
+      "officialName": "MUŞ ADLİYESİ",
+      "contactUrl": "https://mus.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Nazilli",
+      "officialName": "NAZİLLİ ADLİYESİ",
+      "contactUrl": "https://nazilli.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Nevşehir",
+      "officialName": "NEVŞEHİR ADLİYESİ",
+      "contactUrl": "https://nevsehir.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Niğde",
+      "officialName": "NİĞDE ADLİYESİ",
+      "contactUrl": "https://nigde.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Nizip",
+      "officialName": "NİZİP ADLİYESİ",
+      "contactUrl": "https://nizip.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Oltu",
+      "officialName": "OLTU ADLİYESİ",
+      "contactUrl": "https://oltu.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Ordu",
+      "officialName": "ORDU ADLİYESİ",
+      "contactUrl": "https://ordu.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Osmaniye",
+      "officialName": "OSMANİYE ADLİYESİ",
+      "contactUrl": "https://osmaniye.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Ödemiş",
+      "officialName": "ÖDEMİŞ ADLİYESİ",
+      "contactUrl": "https://odemis.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Patnos",
+      "officialName": "PATNOS ADLİYESİ",
+      "contactUrl": "https://patnos.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Polatlı",
+      "officialName": "POLATLI ADLİYESİ",
+      "contactUrl": "https://polatli.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Reyhanlı",
+      "officialName": "REYHANLI ADLİYESİ",
+      "contactUrl": "https://reyhanli.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Rize",
+      "officialName": "RİZE ADLİYESİ",
+      "contactUrl": "https://rize.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Sakarya",
+      "officialName": "SAKARYA ADLİYESİ",
+      "contactUrl": "https://sakarya.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Salihli",
+      "officialName": "SALİHLİ ADLİYESİ",
+      "contactUrl": "https://salihli.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Samsun",
+      "officialName": "SAMSUN ADLİYESİ",
+      "contactUrl": "https://samsun.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Seydişehir",
+      "officialName": "SEYDİŞEHİR ADLİYESİ",
+      "contactUrl": "https://seydisehir.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Siirt",
+      "officialName": "SİİRT ADLİYESİ",
+      "contactUrl": "https://siirt.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Silifke",
+      "officialName": "SİLİFKE ADLİYESİ",
+      "contactUrl": "https://silifke.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Silivri",
+      "officialName": "SİLİVRİ ADLİYESİ",
+      "contactUrl": "https://silivri.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Sinop",
+      "officialName": "SİNOP ADLİYESİ",
+      "contactUrl": "https://sinop.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Sivas",
+      "officialName": "SİVAS ADLİYESİ",
+      "contactUrl": "https://sivas.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Siverek",
+      "officialName": "SİVEREK ADLİYESİ",
+      "contactUrl": "https://siverek.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Soma",
+      "officialName": "SOMA ADLİYESİ",
+      "contactUrl": "https://soma.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Söke",
+      "officialName": "SÖKE ADLİYESİ",
+      "contactUrl": "https://soke.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Sungurlu",
+      "officialName": "SUNGURLU ADLİYESİ",
+      "contactUrl": "https://sungurlu.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Şanlıurfa",
+      "officialName": "ŞANLIURFA ADLİYESİ",
+      "contactUrl": "https://sanliurfa.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Şebinkarahisar",
+      "officialName": "ŞEBİNKARAHİSAR ADLİYESİ",
+      "contactUrl": "https://sebinkarahisar.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Şırnak",
+      "officialName": "ŞIRNAK ADLİYESİ",
+      "contactUrl": "https://sirnak.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Tarsus",
+      "officialName": "TARSUS ADLİYESİ",
+      "contactUrl": "https://tarsus.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Tatvan",
+      "officialName": "TATVAN ADLİYESİ",
+      "contactUrl": "https://tatvan.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Tavşanlı",
+      "officialName": "TAVŞANLI ADLİYESİ",
+      "contactUrl": "https://tavsanli.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Tekirdağ",
+      "officialName": "TEKİRDAĞ ADLİYESİ",
+      "contactUrl": "https://tekirdag.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Tokat",
+      "officialName": "TOKAT ADLİYESİ",
+      "contactUrl": "https://tokat.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Torbalı",
+      "officialName": "TORBALI ADLİYESİ",
+      "contactUrl": "https://torbali.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Trabzon",
+      "officialName": "TRABZON ADLİYESİ",
+      "contactUrl": "https://trabzon.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Tunceli",
+      "officialName": "TUNCELİ ADLİYESİ",
+      "contactUrl": "https://tunceli.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Turgutlu",
+      "officialName": "TURGUTLU ADLİYESİ",
+      "contactUrl": "https://turgutlu.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Uşak",
+      "officialName": "UŞAK ADLİYESİ",
+      "contactUrl": "https://usak.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Ünye",
+      "officialName": "ÜNYE ADLİYESİ",
+      "contactUrl": "https://unye.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Van",
+      "officialName": "VAN ADLİYESİ",
+      "contactUrl": "https://van.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Vezirköprü",
+      "officialName": "VEZİRKÖPRÜ ADLİYESİ",
+      "contactUrl": "https://vezirkopru.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Viranşehir",
+      "officialName": "VİRANŞEHİR ADLİYESİ",
+      "contactUrl": "https://viransehir.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Yalova",
+      "officialName": "YALOVA ADLİYESİ",
+      "contactUrl": "https://yalova.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Yalvaç",
+      "officialName": "YALVAÇ ADLİYESİ",
+      "contactUrl": "https://yalvac.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Yozgat",
+      "officialName": "YOZGAT ADLİYESİ",
+      "contactUrl": "https://yozgat.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Yüksekova",
+      "officialName": "YÜKSEKOVA ADLİYESİ",
+      "contactUrl": "https://yuksekova.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Zile",
+      "officialName": "ZİLE ADLİYESİ",
+      "contactUrl": "https://zile.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    },
+    {
+      "courthouseSeat": "Zonguldak",
+      "officialName": "ZONGULDAK ADLİYESİ",
+      "contactUrl": "https://zonguldak.adalet.gov.tr/iletisim",
+      "linkLabel": "İletişim bilgileri",
+      "scope": "direct",
+      "verifiedAt": "2026-07-23"
+    }
+  ]
+}

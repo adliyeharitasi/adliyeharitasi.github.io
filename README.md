@@ -21,6 +21,8 @@ Uygulama `http://localhost:5173` adresinde açılır.
 
 ```powershell
 npm.cmd run dev             # geliştirme sunucusu
+npm.cmd run data:update-contacts # Bakanlığın resmî adliye listesinden iletişim verisini günceller
+npm.cmd run data:check-contacts  # doğrudan resmî iletişim bağlantılarını çevrimiçi kontrol eder
 npm.cmd run data:validate   # 81 il / 973 kayıt ve kaynak kontrolü
 npm.cmd run build           # dist üretim klasörünü oluşturur
 npm.cmd run preview         # üretim paketini yerelde açar
@@ -44,8 +46,16 @@ public/data/
   courthouse-contacts.json doğrulanmış resmî iletişim/telefon rehberi bağlantıları
   regional-courts.json      81 il → 17 faal BAM + 1 planlanan BAM
   sources.json              kaynak kayıtları
-scripts/validate-data.mjs   veri bütünlüğü kontrolü
+scripts/
+  update-courthouse-contacts.mjs  resmî adliye sitelerinden iletişim snapshot'ı üretir
+  check-courthouse-contacts.mjs   resmî bağlantıların açıldığını kontrol eder
+  validate-data.mjs                veri bütünlüğü kontrolü
 ```
+
+Adalet Bakanlığının ayrı bir resmî site yayımladığı adliyelerde doğrudan iletişim
+sayfası kullanılır. Ayrı sitesi bulunmayan adliyelerde Bakanlığın il ve birim seçilebilen
+genel telefon rehberine yönlendirme yapılır. Böylece tüm adliye sonuçlarında iletişim
+erişimi bulunur; doğrulanmamış veya üçüncü taraf telefon numarası gösterilmez.
 
 `dist/` klasörü statik hosting hizmetlerine doğrudan yüklenebilir. `main` dalına
 gönderilen değişiklikler, GitHub Actions sırları tanımlandıktan sonra otomatik olarak

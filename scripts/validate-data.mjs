@@ -26,16 +26,25 @@ for (const location of locations) {
 
 const courthouseSeats = new Set(judicialDistricts.map((record) => record.courthouseSeat))
 const contactSeats = new Set()
-for (const contact of courthouseContacts) {
+for (const contact of courthouseContacts.records) {
   if (contactSeats.has(contact.courthouseSeat)) errors.push(`Mükerrer adliye iletişim kaydı: ${contact.courthouseSeat}`)
   contactSeats.add(contact.courthouseSeat)
   if (!courthouseSeats.has(contact.courthouseSeat)) errors.push(`Yargı çevresinde bulunmayan adliye iletişim kaydı: ${contact.courthouseSeat}`)
   if (!contact.contactUrl?.startsWith('https://') || !contact.contactUrl.includes('.adalet.gov.tr/')) {
     errors.push(`Resmî olmayan adliye iletişim bağlantısı: ${contact.courthouseSeat}`)
   }
-  if (!contact.officialName || !contact.linkLabel || !contact.verifiedAt) {
+  if (!contact.officialName || !contact.linkLabel || !contact.verifiedAt || contact.scope !== 'direct') {
     errors.push(`Eksik adliye iletişim alanı: ${contact.courthouseSeat}`)
   }
+}
+if (!courthouseContacts.directorySource?.url?.startsWith('https://www.adalet.gov.tr/')) {
+  errors.push('Adliye iletişim dizini resmî Adalet Bakanlığı kaynağı olmalı.')
+}
+if (courthouseContacts.fallback?.contactUrl !== 'https://edb.adalet.gov.tr/Rehber') {
+  errors.push('Adliye iletişim fallback bağlantısı resmî Adalet Bakanlığı kaynağı olmalı.')
+}
+if (courthouseContacts.records.length + [...courthouseSeats].filter((seat) => !contactSeats.has(seat)).length !== courthouseSeats.size) {
+  errors.push('Her adliye için iletişim çözümlemesi bulunmalı.')
 }
 
 const sourceIds = new Set(sources.map((source) => source.id))
@@ -205,4 +214,4 @@ if (errors.length) {
   process.exit(1)
 }
 
-console.log(`Veri doğrulandı: 81 il, ${locations.length} coğrafi alan, ${judicialDistricts.length} yargı çevresi, ${activeRegionalCourts.length} faal + ${plannedRegionalCourts.length} planlanan BAM, ${courthouseContacts.length} adliye iletişim bağlantısı, ${sources.length} kaynak.`)
+console.log(`Veri doğrulandı: 81 il, ${locations.length} coğrafi alan, ${judicialDistricts.length} yargı çevresi, ${activeRegionalCourts.length} faal + ${plannedRegionalCourts.length} planlanan BAM, ${courthouseContacts.records.length} doğrudan / ${courthouseSeats.size} toplam adliye iletişim çözümlemesi, ${sources.length} kaynak.`)

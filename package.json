@@ -10,7 +10,9 @@
     "dev": "vite --configLoader runner",
     "build": "tsc -b && vite build --configLoader runner",
     "preview": "vite preview --configLoader runner",
-    "data:validate": "node scripts/validate-data.mjs"
+    "data:validate": "node scripts/validate-data.mjs",
+    "data:update-contacts": "node scripts/update-courthouse-contacts.mjs",
+    "data:check-contacts": "node scripts/check-courthouse-contacts.mjs"
   },
   "dependencies": {
     "leaflet": "1.9.4",

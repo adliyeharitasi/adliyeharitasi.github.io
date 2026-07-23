@@ -32,7 +32,18 @@ export interface CourthouseContactRecord {
   officialName: string
   contactUrl: string
   linkLabel: string
+  scope: 'direct' | 'directory'
   verifiedAt: string
+}
+
+export interface CourthouseContactsData {
+  directorySource: {
+    title: string
+    url: string
+    verifiedAt: string
+  }
+  fallback: Omit<CourthouseContactRecord, 'courthouseSeat'>
+  records: CourthouseContactRecord[]
 }
 
 export type JudicialActivityStatus = 'faal' | 'birlestirildi' | 'teskilat-kurulmadi' | 'faal-degil'

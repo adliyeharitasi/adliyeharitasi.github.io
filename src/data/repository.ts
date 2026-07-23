@@ -1,5 +1,5 @@
 import { z } from 'zod'
-import type { CourthouseContactRecord, JudicialDistrictRecord, LocationRecord, RegionalCourtRecord, SourceRecord } from '../types'
+import type { CourthouseContactsData, JudicialDistrictRecord, LocationRecord, RegionalCourtRecord, SourceRecord } from '../types'
 
 const locationSchema = z.object({
   id: z.string(),
@@ -35,7 +35,18 @@ const courthouseContactSchema = z.object({
   officialName: z.string(),
   contactUrl: z.string().url(),
   linkLabel: z.string(),
+  scope: z.enum(['direct', 'directory']),
   verifiedAt: z.string(),
+})
+
+const courthouseContactsSchema = z.object({
+  directorySource: z.object({
+    title: z.string(),
+    url: z.string().url(),
+    verifiedAt: z.string(),
+  }),
+  fallback: courthouseContactSchema.omit({ courthouseSeat: true }),
+  records: z.array(courthouseContactSchema),
 })
 
 const judicialDistrictSchema = z.object({
@@ -67,9 +78,9 @@ const assetUrl = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^
 export const loadLocations = () => fetchJson<LocationRecord[]>(assetUrl('data/locations.json'), z.array(locationSchema))
 export const loadSources = () => fetchJson<SourceRecord[]>(assetUrl('data/sources.json'), z.array(sourceSchema))
 export const loadRegionalCourts = () => fetchJson<RegionalCourtRecord[]>(assetUrl('data/regional-courts.json'), z.array(regionalCourtSchema))
-export const loadCourthouseContacts = () => fetchJson<CourthouseContactRecord[]>(
+export const loadCourthouseContacts = () => fetchJson<CourthouseContactsData>(
   assetUrl('data/courthouse-contacts.json'),
-  z.array(courthouseContactSchema),
+  courthouseContactsSchema,
 )
 export const loadJudicialDistricts = () => fetchJson<JudicialDistrictRecord[]>(
   assetUrl('data/judicial-districts.json'),
